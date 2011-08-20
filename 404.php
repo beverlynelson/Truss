@@ -6,7 +6,6 @@
 * 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
 * 	Version:        0.1.0
-* 	File Nmae: 		404.php
 */
 
 	get_header(); 

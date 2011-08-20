@@ -7,7 +7,6 @@
 * 	Author URI:     http: //cogsprocket.net
 * 	Template:       Cogsprocket's WP 3.2 Framework
 * 	Version:        0.1.0
-* 	File Nmae: 		header.php
 */
 ?>
 

@@ -7,7 +7,6 @@
 * 	Author URI:     http: //cogsprocket.net
 * 	Template:       Truss
 * 	Version:        0.1.0
-* 	File Nmae: 		footer.php
 */
 
 ?>
