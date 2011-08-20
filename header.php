@@ -2,8 +2,8 @@
 /**
 * 	Theme Name:     Cogsprocket's WP 3.2 Framework
 * 	Theme URI:      http: //cogsprocket.net/
-* 	Description:    Core scaffolding for Cogsprocket WordPress Themes.
-* 	Author:         Steven Dawson
+* 	Description:    Core scaffolding for WordPress Themes.
+* 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
 * 	Template:       Cogsprocket's WP 3.2 Framework
 * 	Version:        0.1.0
