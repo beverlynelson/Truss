@@ -1,0 +1,19 @@
+/**
+* 	Theme Name:     Cogsprocket WP 3.2 Framework
+* 	Theme URI:      http: //cogsprocket.net/
+* 	Description:    Core scaffolding for Cogsprocket WordPress Themes.
+* 	Author:         Steven Dawson
+* 	Author URI:     http: //cogsprocket.net
+* 	Version:        0.1.0
+*   Template includes jQuery 1.6.1 and Google Maps API v3
+*/
+
+* {
+  	margin:0;
+  	padding:0;
+  	border:0;
+  	outline:0;
+  	font-size:100%;
+  	font:inherit;
+	vertical-align:baseline;
+}

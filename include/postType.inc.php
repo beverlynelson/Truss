@@ -1,0 +1,55 @@
+<?php 
+/**
+*	Object Registry
+*
+* 	Theme Name:     Cogsprocket WP 3.2 Framework
+* 	Theme URI:      http: //cogsprocket.net/
+* 	Description:    Core scaffolding for Cogsprocket WordPress Themes.
+* 	Author:         Steven Dawson
+* 	Author URI:     http: //cogsprocket.net
+* 	Template:       Cogsprocket WP 3.2 Framework
+* 	Version:        0.1.0
+* 	File Nmae: 		postType.inc.php
+*						Object for registering new Post Types
+*/
+
+class postType {
+	
+	public $Name = "";							// Post type name
+	public $Singular= "";						// Post type name (Singular)
+	public $Public = true;						// Post type public/private
+	public $Archive = true;						// Allow post type to be archived
+	public $Slug = "";							// Set a slug for permalinks
+
+	public function __construct($_name = 0, $_singular = 0) {
+		$this->Name = $_name;
+		$this->Singluar = $_singular;
+	}
+	
+	public function Create() {
+		register_post_type( $this->Name,
+			array(
+				'labels' => array(
+					'name' => __( $this->Name ),
+					'singular_name' => __( $this->Singular )
+				),
+			'public' => $this->Public,
+			'has_archive' => $this->Archive,
+			'rewrite' => array('slug' => $this->Slug),	
+			'supports' => array(
+				  'title',
+				  'editor',
+				  'excerpt',
+				  'trackbacks',
+				  'custom-fields',
+				  'revisions',
+				  'thumbnail',
+				  'author',
+				  'page-attributes'
+			  )
+			)
+		);
+	}
+	
+}
+?>
