@@ -29,6 +29,7 @@ if (function_exists('add_theme_support')) {
 
   $truss->widgetArea->Name = "Footer (Left)";
   $truss->widgetArea->Label = "Widgets that appear in the footer on the left hand side.";
+  $truss->widgetArea->Create();
 
 	$truss->postType->Name = "Tutorials";
 	$truss->postType->Singular = "Tutorial";
