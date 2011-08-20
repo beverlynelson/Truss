@@ -9,8 +9,6 @@
 * 	Author URI:     http: //cogsprocket.net
 * 	Template:       Truss
 * 	Version:        0.1.0
-* 	File Nmae: 		postType.inc.php
-*						Object for registering new Post Types
 */
 
 class postType {
@@ -25,6 +23,15 @@ class postType {
 		$this->Name = $_name;
 		$this->Singluar = $_singular;
 	}
+	
+	// Singleton method
+  private function register() {
+    
+    if (!isset(self::$instance)) { // Check that the object has not had its instance set yet.
+        self::$instance = new self; // Set the instance of the object to be the name of the object.
+    } 
+    return self::$instance; // Return the object's instance.
+  }
 	
 	public function Create() {
 		register_post_type( $this->Name,

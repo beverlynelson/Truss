@@ -8,8 +8,6 @@
 * 	Author URI:     http: //cogsprocket.net
 * 	Template:       Truss
 * 	Version:        0.1.0
-* 	File Nmae: 		postTemplates.inc.php
-*						Library for allowing posts to have templates.
 */
 
 //  Add "post_template_meta_box" based on "page_attributes_meta_box"
