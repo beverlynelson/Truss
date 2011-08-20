@@ -12,7 +12,7 @@
 */
 
 
-class taxonomy {
+class taxonomy extends truss {
 	
 	public $Name = "";								// Taxonomy name
 	public $Type = "";								// Taxonomy type
@@ -25,15 +25,6 @@ class taxonomy {
 		// $this->Args = $_args;
 		$this->Label = $_label;
 	}
-	
-	// Singleton method
-  private function register() {
-    
-    if (!isset(self::$instance)) { // Check that the object has not had its instance set yet.
-        self::$instance = new self; // Set the instance of the object to be the name of the object.
-    } 
-    return self::$instance; // Return the object's instance.
-  }
 	
 	public function Create() {
 		register_taxonomy(

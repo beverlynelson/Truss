@@ -10,12 +10,10 @@
 * 	Version:        0.1.0
 */
 
-class trussWork {
-
-  private static $instance;
+class trussWork extends truss {
   
   private $registeredObjects  = array(
-    /* 'postTemplate' => 'postTemplate',   // Not currently in object model */
+    /* 'postTemplate' => 'postTemplate',   // Not currently in object registry... Yet */
     'customMenu' => 'customMenu',
     'postType' => 'postType',
     'taxonomy' => 'taxonomy',
@@ -24,15 +22,6 @@ class trussWork {
 
   public function __construct() {
 
-  }
-  
-  // Singleton method
-  private function register() {
-    
-    if (!isset(self::$instance)) { // Check that the object has not had its instance set yet.
-        self::$instance = new self; // Set the instance of the object to be the name of the object.
-    } 
-    return self::$instance; // Return the object's instance.
   }
 
   public function plugin($name) {

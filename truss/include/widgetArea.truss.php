@@ -10,7 +10,7 @@
 * 	Version:        0.1.0
 */
 
-class widgetArea {
+class widgetArea extends truss {
 	
 	public $Name = "";
 	private $ID = 1;
@@ -23,15 +23,6 @@ class widgetArea {
 	public function __construct($_name = 0, $_description = 0) {
 		
 	}
-	
-	// Singleton method
-  private function register() {
-    
-    if (!isset(self::$instance)) { // Check that the object has not had its instance set yet.
-        self::$instance = new self; // Set the instance of the object to be the name of the object.
-    } 
-    return self::$instance; // Return the object's instance.
-  }
 	
 	public function Create() {
 		register_sidebar(array(

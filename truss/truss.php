@@ -11,5 +11,6 @@
 */
 
 // ------------------------------------------------------- //	
+require_once("include/truss.truss.php");
 require_once("include/trussWork.truss.php");
 $truss = new trussWork();
