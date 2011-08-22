@@ -2,7 +2,7 @@
 /**
 * 	Theme Name:     Truss
 * 	Theme URI:      http: //cogsprocket.net/
-* 	Description:    Core scaffolding for Cogsprocket WordPress Themes
+* 	Description:    An Object Oriented WordPress Framework
 * 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
 * 	Template:       Truss
@@ -27,12 +27,14 @@ if (function_exists('add_theme_support')) {
 	$truss->customMenu->Create();
 
   $truss->widgetArea->Name = "Footer (Left)";
-  $truss->widgetArea->Label = "Widgets that appear in the footer on the left hand side.";
+  $truss->widgetArea->Description = "Widgets that appear in the footer on the left hand side.";
   $truss->widgetArea->Create();
 
 	$truss->postType->Name = "Tutorials";
 	$truss->postType->Singular = "Tutorial";
 	$truss->postType->Create();
+	
+	
 
 
 ?>

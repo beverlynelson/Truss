@@ -10,7 +10,7 @@
 * 	Version:        0.1.0
 */
 
-class widgetArea extends truss {
+class widgetArea  {
 	
 	public $Name = "";
 	private $ID = 1;

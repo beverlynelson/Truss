@@ -10,34 +10,41 @@
 * 	Version:        0.1.0
 */
 
-class trussWork extends truss {
+class trussWork  {
   
-  private $registeredObjects  = array(
-    /* 'postTemplate' => 'postTemplate',   // Not currently in object registry... Yet */
-    'customMenu' => 'customMenu',
-    'postType' => 'postType',
-    'taxonomy' => 'taxonomy',
-    'widgetArea' => 'widgetArea'
+  private static $instance;
+  private static $settings = array();
+  private static $trusses = array(
+    "postType" => "postType",
+    "widgetArea" => "widgetArea",
+    "customMenu" => "customMenu"
   );
 
-  public function __construct() {
-
+  private function __construct() {
   }
+  
+  public static function singleton() {
 
-  public function plugin($name) {
-    
-    $class = array_key_exists($name, $this->registeredObjects) ? $this->registeredObjects[$name] : ucfirst($name);  // Check the trussWork registry
-    
-    $file = dirname(__FILE__) . "/$name.truss.php"; // set the file name for the registered object.
-    
-    if (!isset(self::$name) && file_exists($file)) { // Check that the object is not currently in trussWork and that a file exists for that object
-      // Add the object to trussWork and set itself to a child object of trussWork
-      require_once($file);                          
-      return $this->$name = call_user_method('register', $class);  
-    } else {
-      trigger_error("Truss ::: Non-Truss object '$name' could not be loaded!", E_USER_ERROR)
+    if (!isset(self::$instance)) {
+      $truss = __CLASS__;
+      self::$instance = new $truss;
     }
     
+    return self::$instance;
+
+  }
+  
+  public function register($truss = 0) {
+    require_once($truss . ".truss.php");
+    $this->{$truss} = new $truss(self::$instance);
+  }
+  
+  public function setting($data, $key) {
+    self::$settings[$key] = $data;
+  }
+
+  public function __clone() {
+    trigger_error("Truss :: Cloning Trusswork is Forbidden", E_USER_ERROR);
   }
 
 }

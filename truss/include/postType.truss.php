@@ -11,15 +11,16 @@
 * 	Version:        0.1.0
 */
 
-class postType extends truss {
+class postType {
 	
 	public $Name = "";              // Post type name
 	public $Singular= "";           // Post type name (Singular)
 	public $Public = true;          // Post type public/private
 	public $Archive = true;         // Allow post type to be archived
 	public $Slug = "";              // Set a slug for permalinks
-
+	
 	public function __construct($_name = 0, $_singular = 0) {
+	  $this->registry = $registry;
 		$this->Name = $_name;
 		$this->Singluar = $_singular;
 	}

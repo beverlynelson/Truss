@@ -12,7 +12,7 @@
 */
 
 
-class taxonomy extends truss {
+class taxonomy  {
 	
 	public $Name = "";								// Taxonomy name
 	public $Type = "";								// Taxonomy type
