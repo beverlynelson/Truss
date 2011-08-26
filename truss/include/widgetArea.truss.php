@@ -37,6 +37,12 @@ class widgetArea  {
 		$this->ID++;
 	}
 	
+	public function Reveal($name) {
+	    if (!function_exists('dynamic_sidebar') || !dynamic_sidebar($name)) {
+        
+      }
+	}
+	
 }
 	
 	
