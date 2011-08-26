@@ -2,12 +2,12 @@
 /**
 * 	Theme Name:     Truss
 * 	Theme URI:      http: //cogsprocket.net/
-* 	Description:    Core scaffolding for Cogsprocket WordPress Themes
+* 	Description:    An Object Oriented WordPress Framework
 * 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
-* 	Template:       Truss
 * 	Version:        0.1.0
 */
+
 // ------------------------------------------------------- //	
 
 //require_once("include/truss.truss.php");

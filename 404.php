@@ -2,7 +2,7 @@
 /**
 * 	Theme Name:     Truss
 * 	Theme URI:      http: //cogsprocket.net/
-* 	Description:    Core scaffolding for WordPress Themes.
+* 	Description:    An Object Oriented WordPress Framework
 * 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
 * 	Version:        0.1.0

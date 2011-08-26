@@ -1,14 +1,13 @@
 <?php
 /**
-*
 * 	Theme Name:     Truss
 * 	Theme URI:      http: //cogsprocket.net/
-* 	Description:    Core scaffolding for WordPress Themes.
+* 	Description:    An Object Oriented WordPress Framework
 * 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
-* 	Template:       Truss
 * 	Version:        0.1.0
 */
+
 
 //  Add "post_template_meta_box" based on "page_attributes_meta_box"
 function post_template_meta_box() {

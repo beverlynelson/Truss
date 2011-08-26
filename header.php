@@ -1,13 +1,13 @@
 <?php 
 /**
-* 	Theme Name:     Cogsprocket's WP 3.2 Framework
+* 	Theme Name:     Truss
 * 	Theme URI:      http: //cogsprocket.net/
-* 	Description:    Core scaffolding for WordPress Themes.
+* 	Description:    An Object Oriented WordPress Framework
 * 	Author:         Stubby
 * 	Author URI:     http: //cogsprocket.net
-* 	Template:       Cogsprocket's WP 3.2 Framework
 * 	Version:        0.1.0
 */
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -21,7 +21,6 @@
 		<?php 
 			wp_head(); 
 		?>
-		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/960.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	
